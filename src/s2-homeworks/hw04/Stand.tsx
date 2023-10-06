@@ -9,7 +9,7 @@ const Stand = () => {
     const [error, setError] = useState<string>('')
 
     const [stateForAllCheckboxes, setChecked] = useState<boolean>(false)
-
+    console.log(stateForAllCheckboxes)
     return (
         <div id={'hw4-stand'} className={s.stand}>
             <div className={s.inputs}>
@@ -49,7 +49,10 @@ const Stand = () => {
                 </div>
                 {/*красная кнопка:*/}
                 <div>
-                    <SuperButton id={'hw4-super-button-red'} xType={'red'}>
+                    <SuperButton
+                        id={'hw4-super-button-red'}
+                        xType={'red'}
+                    >
                         red
                     </SuperButton>
                 </div>
